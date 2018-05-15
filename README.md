@@ -1,5 +1,5 @@
-# js-utils
-A net of JavaScript utilities wrapped in one library
+# utility-lib
+A collection of javascript utilities
 
 Adds global variable `JSUtils` with list of libraries to use.
 
@@ -25,7 +25,7 @@ Adds global variable `JSUtils` with list of libraries to use.
     
 ### Simplify money output
 
-*An alias of rJSUtils.Numbers.Formatting.Geneic(Number, 2, '.', ',');*
+*An alias of JSUtils.Numbers.Formatting.Generic(Number, 2, '.', ',');*
 	
     string Money( float Number )
 

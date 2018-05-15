@@ -1,7 +1,7 @@
 {
-  "name": "js-forms",
+  "name": "utility-lib",
   "version": "1.0.0",
-  "description": "Javascript utilities",
+  "description": "A collection of javascript utilities",
   "dependencies": {
     "google-closure-compiler": "^20180204.0.0",
     "gulp": "^3.9.1",
@@ -11,5 +11,17 @@
     "utils",
     "jsutils",
     "utility"
-  ]
+  ],
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/ed9/utility-lib.git",
+  "author": "Edgars Kohs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ed9/utility-lib/issues"
+  },
+  "homepage": "https://github.com/ed9/utility-lib#readme"
 }
