@@ -1,5 +1,8 @@
 # utility-lib
+
 A collection of javascript utilities
+
+Install ----> `npm i @ed9/utility-lib`
 
 Adds global variable `JSUtils` with list of libraries to use.
 
