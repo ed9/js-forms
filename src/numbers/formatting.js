@@ -1,4 +1,4 @@
-let generic = function (number, decimals, dec_point, thousands_sep) {
+let Generic = function (number, decimals, dec_point, thousands_sep) {
 
     number = number * 1;
 
@@ -15,15 +15,16 @@ let generic = function (number, decimals, dec_point, thousands_sep) {
     return str.join(dec_point !== void(0) ? dec_point : '.');
 };
 
-let money = function (number) {
-    return generic(number, 2, '.', ',');
+let Money = function (number) {
+    return Generic(number, 2, '.', ',');
 };
 
 let NumberFormatting = {
-    'Generic' : generic,
-    'Money' : money
+    'Generic' : Generic,
+    'Money' : Money
 }
 
 export {
+    Generic,
     NumberFormatting
 }

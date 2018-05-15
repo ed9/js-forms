@@ -11,7 +11,8 @@ gulp.task('build', function () {
             output_wrapper: '(function(){\n%output%\n}).call(this)',
             js_output_file: 'jsUtil.js',
             js: [
-                './src/numbers/*.js'
+                './src/numbers/*.js',
+                './src/colours/*.js'
             ]
         }))
         .pipe(gulp.dest('./dist/'));
