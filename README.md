@@ -10,6 +10,8 @@ Adds global variable `JSUtils` with list of libraries to use.
 * [JSUtils.Numbers](#working-with-numbers)
 * [JSUtils.Numbers.Generic](#format-a-number-with-grouped-thousands)
 * [JSUtils.Numbers.Money](#simplify-money-output)
+* [JSUtils.Strings](#working-with-strings)
+* [JSUtils.Strings.Links.ExtractHostnameFromUrl](#extract-hostname-from-url)
 * [JSUtils.Colours](#working-with-colours)
 * [JSUtils.Colours.Convert.convertHexToRgbString](#convert-hex-to-rgb)
 * [JSUtils.Colours.Convert.convertHexToRgbAlphaString](#convert-hex-to-rgb-alpha)
@@ -46,6 +48,17 @@ Adds global variable `JSUtils` with list of libraries to use.
 
 	JSUtils.Numbers.Formatting.Money(1235.67);
     // 12,345.67
+
+## Working with strings
+
+### Extract hostname from URL
+
+    string ExtractHostnameFromUrl( string URL )
+
+#### Examples
+
+    JSUtils.Strings.Links.ExtractHostnameFromUrl('https://github.com/ed9/utility-lib');
+    // github.com
 
 ## Working with colours
 
