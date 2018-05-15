@@ -6,6 +6,16 @@ Install ----> `npm i @ed9/utility-lib`
 
 Adds global variable `JSUtils` with list of libraries to use.
 
+# Tree
+* [JSUtils.Numbers](#working-with-numbers)
+* [JSUtils.Numbers.Generic](#format-a-number-with-grouped-thousands)
+* [JSUtils.Numbers.Money](#simplify-money-output)
+* [JSUtils.Colours](#working-with-colours)
+* [JSUtils.Colours.Convert.convertHexToRgbString](#convert-hex-to-rgb)
+* [JSUtils.Colours.Convert.convertHexToRgbAlphaString](#convert-hex-to-rgb-alpha)
+* [JSUtils.Colours.Convert.AdjustBrightness](#adjust-brightness-of-a-hex-colour-code)
+* [JSUtils.Colours.Convert.IdentifyLuminance](#identify-luminance-of-a-colour-code)
+
 ## Working with numbers
 
 ### Format a number with grouped thousands.
