@@ -30,9 +30,24 @@ let convertHexToRgbAlphaString = function (hex, alpha) {
     return 'rgba(' + parseInt(rgb[1], 16) + ',' + parseInt(rgb[2], 16) + ',' + parseInt(rgb[3], 16) + ', ' + Generic(alpha.toString(), 2, '.', '') + ')';
 };
 
+let adjustBrightness = function (color, percent) {
+    var f = parseInt(color.slice(1), 16), t = percent < 0 ? 0 : 255, p = percent < 0 ? percent * -1 : percent,
+        R = f >> 16, G = f >> 8 & 0x00FF, B = f & 0x0000FF;
+    return "#" + (0x1000000 + (Math.round((t - R) * p) + R) * 0x10000 + (Math.round((t - G) * p) + G) * 0x100 + (Math.round((t - B) * p) + B)).toString(16).slice(1);
+};
+
+let identifyLuminance = function (hex) {
+    let rgb = convertHexToRgb(hex, true);
+    let luminance = Math.sqrt(0.241 * Math.pow(rgb['r'], 2) + 0.691 * Math.pow(rgb['g'], 2) + 0.068 * Math.pow(rgb['b'], 2));
+
+    return luminance >= 130 ? 'L' : 'D';
+};
+
 let ColourConversions = {
     'HexToRgb': convertHexToRgbString,
-    'HexToRgbAlpha': convertHexToRgbAlphaString
+    'HexToRgbAlpha': convertHexToRgbAlphaString,
+    'AdjustBrightness': adjustBrightness,
+    'IdentifyLuminance': identifyLuminance
 };
 
 export {

@@ -54,3 +54,29 @@ Adds global variable `JSUtils` with list of libraries to use.
     JSUtils.Colours.Convert.convertHexToRgbAlphaString('#ffffff', 0.5);
     // rgba(255,255,255,0.5)
         
+### Adjust brightness of a HEX colour code
+
+    string AdjustBrightness ( string Hex, float Percent )
+
+#### Examples
+
+    JSUtils.Colours.Convert.AdjustBrightness('#f00f00', 0.5);
+    // equalivent of sass commad: lighten(#f00f00, 0.5)
+
+    JSUtils.Colours.Convert.AdjustBrightness('#f00f00', -0.5);
+    // equalivent of sass commad: darken(#f00f00, 0.5)
+    
+### Identify luminance of a colour code
+
+    string IdentifyLuminance ( string Hex )
+
+#### Examples
+
+    JSUtils.Colours.Convert.IdentifyLuminance('#fff');
+    // "L" - as Light
+    
+    JSUtils.Colours.Convert.IdentifyLuminance('#000');
+    // "D" - as Dark
+    
+    
+        
