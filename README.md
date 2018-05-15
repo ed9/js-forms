@@ -64,7 +64,7 @@ Adds global variable `JSUtils` with list of libraries to use.
 
 ### Convert HEX to RGB
 
-    string convertHexToRgbString ( string Hex )
+    string HexToRgb ( string Hex )
 
 #### Examples
 
@@ -73,7 +73,7 @@ Adds global variable `JSUtils` with list of libraries to use.
     
 ### Convert HEX to RGB-Alpha
 
-    string convertHexToRgbAlphaString ( string Hex, float Alpha )
+    string HexToRgbAlpha ( string Hex, float Alpha )
 
 #### Examples
 
