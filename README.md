@@ -1,2 +1,2 @@
-# js-forms
-Building forms using JavaScript
+# js-utils
+A net of JavaScript utilities wrapped in one library
