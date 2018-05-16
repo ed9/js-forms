@@ -1,6 +1,14 @@
 import {Generic} from "../numbers/formatting.js";
 
 let convertHexToRgb = function (hex) {
+    hex = hex.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    if (hex.length === 3) {
+        hex = hex.toString() + hex.toString();
+    }
+
+    hex = '#' + hex;
+
     let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 
     if (!result) {
