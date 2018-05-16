@@ -1,6 +1,6 @@
 {
   "name": "@ed9/utility-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of javascript utilities",
   "dependencies": {
     "google-closure-compiler": "^20180204.0.0",

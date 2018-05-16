@@ -17,7 +17,7 @@ let convertHexToRgb = function (hex) {
 let convertHexToRgbString = function (hex) {
     let rgb = convertHexToRgb(hex);
 
-    return "rgb(" + parseInt(rgb[1], 16) + ',' + parseInt(rgb[2], 16) + ',' + parseInt(rgb[3], 16) + ')';
+    return "rgb(" + parseInt(rgb['r'], 16) + ',' + parseInt(rgb['g'], 16) + ',' + parseInt(rgb['b'], 16) + ')';
 };
 
 let convertHexToRgbAlphaString = function (hex, alpha) {
@@ -27,7 +27,7 @@ let convertHexToRgbAlphaString = function (hex, alpha) {
 
     let rgb = convertHexToRgb(hex);
 
-    return 'rgba(' + parseInt(rgb[1], 16) + ',' + parseInt(rgb[2], 16) + ',' + parseInt(rgb[3], 16) + ', ' + Generic(alpha.toString(), 2, '.', '') + ')';
+    return 'rgba(' + parseInt(rgb['r'], 16) + ',' + parseInt(rgb['g'], 16) + ',' + parseInt(rgb['b'], 16) + ', ' + Generic(alpha.toString(), 2, '.', '') + ')';
 };
 
 let adjustBrightness = function (color, percent) {

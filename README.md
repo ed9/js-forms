@@ -13,8 +13,8 @@ Adds global variable `JSUtils` with list of libraries to use.
 * [JSUtils.Strings](#working-with-strings)
 * [JSUtils.Strings.Links.ExtractHostnameFromUrl](#extract-hostname-from-url)
 * [JSUtils.Colours](#working-with-colours)
-* [JSUtils.Colours.Convert.convertHexToRgbString](#convert-hex-to-rgb)
-* [JSUtils.Colours.Convert.convertHexToRgbAlphaString](#convert-hex-to-rgb-alpha)
+* [JSUtils.Colours.Convert.HexToRgb](#convert-hex-to-rgb)
+* [JSUtils.Colours.Convert.HexToRgbAlpha](#convert-hex-to-rgb-alpha)
 * [JSUtils.Colours.Convert.AdjustBrightness](#adjust-brightness-of-a-hex-colour-code)
 * [JSUtils.Colours.Convert.IdentifyLuminance](#identify-luminance-of-a-colour-code)
 
@@ -68,7 +68,7 @@ Adds global variable `JSUtils` with list of libraries to use.
 
 #### Examples
 
-    JSUtils.Colours.Convert.convertHexToRgbString('#ffffff');
+    JSUtils.Colours.Convert.HexToRgb('#ffffff');
     // rgb(255,255,255)
     
 ### Convert HEX to RGB-Alpha
@@ -77,7 +77,7 @@ Adds global variable `JSUtils` with list of libraries to use.
 
 #### Examples
 
-    JSUtils.Colours.Convert.convertHexToRgbAlphaString('#ffffff', 0.5);
+    JSUtils.Colours.Convert.HexToRgbAlpha('#ffffff', 0.5);
     // rgba(255,255,255,0.5)
         
 ### Adjust brightness of a HEX colour code
