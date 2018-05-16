@@ -40,7 +40,7 @@ let identifyLuminance = function (hex) {
     let rgb = convertHexToRgb(hex, true);
     let luminance = Math.sqrt(0.241 * Math.pow(rgb['r'], 2) + 0.691 * Math.pow(rgb['g'], 2) + 0.068 * Math.pow(rgb['b'], 2));
 
-    return luminance >= 130 ? 'L' : 'D';
+    return luminance <= 130 ? 'D' : 'L';
 };
 
 let ColourConversions = {
